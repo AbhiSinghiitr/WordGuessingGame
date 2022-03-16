@@ -78,7 +78,7 @@ function gamingZone(easy){
             document.getElementById("correctAnswerResult").style.display="block";
             document.getElementById("answerAnnouncement").style.display='block';
             document.getElementById("trueAnswer").innerHTML="CORRECT ANSWER : "+foodName;
-            setTimeout(hideResult,5000);
+            setTimeout(hideResult,4000);
            
         }
         else{
@@ -87,7 +87,7 @@ function gamingZone(easy){
             document.getElementById("wrongAnswerResult").style.display="block";
             document.getElementById("answerAnnouncement").style.display='block';
             document.getElementById("trueAnswer").innerHTML="CORRECT ANSWER : "+foodName;
-            setTimeout(hideResult,5000);
+            setTimeout(hideResult,4000);
         }
         window.console.log("workingFine");
         totalGame+=1;
