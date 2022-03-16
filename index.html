@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600&family=Fredoka:wght@300;400&family=Merriweather:wght@300;400&family=Open+Sans&family=Rubik:wght@300;400&family=The+Nautigal&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- fist page -->
+    <div class="startingArea" id="startGame">
+        <button class="btn" id="startGameButton" onclick="levelChoose()">Start Game</button>
+    </div>
+    
+    <!-- secondPage -->
+    <div class="disabledChooseLevel" id="chooseLevel">
+        <button id="easyMode" class="btn" onclick="gamingZone(true)">EASY MODE</button>
+        <button id="hardMode" class="btn" onclick="gamingZone(false)">HARD MODE</button>
+    </div>
+    
+
+    <!-- third page -->
+    <div class="disabledGamingArea" id="playGame">
+
+        <!-- SCORE DISPLAY  -->
+        <div class="score">
+            <div class="answer">
+                <span>Total Answer = </span>
+                <span id="totalAnswer"> 0</span>
+            </div>
+            <div class="answer">
+                <span>Correct Answer = </span>
+                <span id="correctAnswer"> 0</span>
+            </div>
+            <div class="answer">
+                <span>Wrong Answer = </span>
+                <span id="wrongAnswer"> 0</span>
+            </div>
+            <div class="answer">
+                <span>Winning Streak = </span>
+                <span id="streakCount"> 0</span>
+            </div>
+
+        </div>
+
+        <!-- QUESTION DISPLAY -->
+        <div class="container">
+            <img  alt="1" id="image-box">
+        </div>
+        <div class="dataArea">
+            <span class="name" id="hint">Hint : a_kd__skd</span>
+            <form id="ans">
+                <input type="text" id="answer">
+                <button type="submit">Submit Answer</button>
+            </form>
+        </div>
+
+        <!-- ANSWER ANOUNCEMENT -->
+        <div id="correctAnswerResult">
+            <span >CORRECT</span>
+        </div>
+        <div id="wrongAnswerResult">
+            <span>WRONG</span>
+        </div>
+        <div id="answerAnnouncement">
+            <span id="trueAnswer"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

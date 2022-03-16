@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: black;
+}
+/* BUTTON PROPERTY */
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px
+}
+/* IMAGE PROPERTY */
+#image-box{
+    max-height: 60vh;
+    max-width: 80vw;
+    border: 2px solid whitesmoke;
+}
+
+/* SCORE DISPLAY  */
+.score{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Merriweather', serif;
+}
+
+/* START GAME BUTTON POSTION */
+.startingArea{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GAMING ARE PROPERTY */
+.disabledGamingArea{
+    display: none;
+}
+.activeGamingArea{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 9px;
+}
+
+/* ANSWER ANOUNCEMENT  */
+#correctAnswerResult{
+    display: none;
+    padding: 13px;
+    background-color: #4CAF50;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+}
+#wrongAnswerResult{
+    display: none;
+    padding: 13px;
+    background-color: rgb(219, 49, 49);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+}
+
+/* SCORE DISPLAY PROPERTY */
+.dataArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    font-family: 'Merriweather', serif;
+}
+button{
+    color: black;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: azure;
+    color: black;
+}
+
+
+/* LEVEL CHOOSE PROPETY */
+.disabledChooseLevel{
+    display: none;
+}
+.activeChooseLevel{
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ANSWER ANNOUNCEMENT  */
+#answer{
+    color: black;
+}
+
+#answerAnnouncement{
+    display: none;
+    font-family: 'Merriweather', serif;
+    color: aquamarine;
+    font-weight: bold;
+}
