@@ -70,6 +70,7 @@ function gamingZone(easy){
     var form = document.getElementById("ans");
     form.addEventListener('submit' , (event)=>{
         event.preventDefault();
+        hideResult();
         var ans = form['answer'].value;
         ans=ans.toLowerCase();
         if(ans==foodName){
